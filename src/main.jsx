@@ -6,14 +6,18 @@ import { Provider } from 'react-redux'
 import store from './store/store.js'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home.jsx'
+import '@tinymce/tinymce-react';
+
 import { AuthLayout, Login } from './components/index.js'
+
+
 import AddPost from "./pages/Addpost.jsx";
-import Signup from './pages/Signup.jsx'
-import EditPost from "./pages/Editpost.jsx";
+import Signup from './pages/Signup'
+import EditPost from "./pages/EditPost.jsx"
 
-import Post from "./pages/Allposts.jsx";
+import Post from "./pages/Post";
 
-import AllPosts from "./pages/Post.jsx";
+import AllPosts from "./pages/Allposts.jsx";
 
 const router = createBrowserRouter([
   {
